@@ -1,0 +1,13 @@
+<!-- templates/repositories.html.tera -->
+<h1>Repositories List</h1>
+
+<ul>
+    {% for repo in repositories %}
+        <li>
+            <strong>{{ repo.name }}</strong><br>
+           <strong>{{ repo.description }}</strong><br>
+            <a href="{{ repo.html_url }}">{{ repo.full_name }}</a><br>
+
+        </li>
+    {% endfor %}
+</ul>
